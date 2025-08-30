@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Vacation Vibes Travel Recommendations</title>
-  <link rel="stylesheet" href="./vacation_vibes.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <style>
     body {
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d5/Koh_Mak_%28island%29%2C_Thailand%2C_Palm_trees_on_the_beach.jpg'); /* Replace with your image path */
@@ -27,19 +27,44 @@
 </head>
 <body>
     <nav>
-        <h1>Vacation Vibes</h1>
-        <ul>
-          <li><a href="./travel_recommendation.html" id="home">Home </a></li>
-          <li><a href="./vibes_about.html" id="about">About Us </a></li>
-          <li><a href="./vibes_contact.html" id="contact">Contact Us </a></li>
-          <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
-          <li><button id='btnSearch'>Search</button>
-        <li><button id='btnReset'>Reset</button>
-          </li>
-        </ul>
-        </nav>
-<h1>Vacations Vibes Travel Recommendations</h1>
-<p>Active, laidback, dreamy, or intense?</p>
-<p>Use the Vacation Vibes explorer to find the perfect vacation to match your vibe. </p>  
-<a href="https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Palm_trees_on_the_beach.jpg">© Vyacheslav Argenberg / http://www.vascoplanet.com/</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons    
+        <div class="w3-bar w3-blue">
+            <h1>Vacation Vibes</h1>
+          <a href="./travel_recommendation.html" id="home" class="w3-bar-item w3-button">Home </a></li>
+          <a href="./vibes_about.html" id="about" class="w3-bar-item w3-button">About Us </a></li>
+          <a href="./vibes_contact.html" id="contact" class="w3-bar-item w3-button">Contact Us </a></li>
+          <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
+          <button id='btnSearch'>Search</button>
+        <button id='btnReset'>Reset</button>
+                </nav>
+                <div class="w3-flex" style="gap:8px">
+                    <div>
+<h1 style="color: white">Vacations Vibes Travel Recommendations</h1>
+                        <p style="color: white">Active, laidback, dreamy, or intense?</p>
+                        <p style="color: white">Use the Vacation Vibes explorer to find the perfect vacation to match your vibe. </p>  
+                        <button id='btnBook'>Book Now</button>
+                          </div>                
+                    <div><p>For the recommendations</p>
+                        <div class="w3-card-4">
+                            <div class="w3-container w3-white">
+                            <img src="img_snowtops.jpg" alt="Alps">
+                            <div class="w3-container w3-center">
+                              <p>The Italian / Austrian Alps</p>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="w3-card-4">
+                            <div class="w3-container w3-white">
+                            <img src="img_snowtops.jpg" alt="Alps">
+                            <div class="w3-container w3-center">
+                              <p>The Italian / Austrian Alps</p>
+                            </div>
+                        </div>
+                          </div>
+                    </div>
+                  </div>
+<footer>                  
+<div class="w3-container w3-blue">
+    <p>Background image credit: <a href="https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Palm_trees_on_the_beach.jpg">© Vyacheslav Argenberg / http://www.vascoplanet.com/</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons</p>
+  </div>
+</footer>
 </body>
