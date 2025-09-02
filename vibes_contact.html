@@ -32,33 +32,37 @@
           <a href="./travel_recommendation.html" id="home" class="w3-bar-item w3-button">Home </a></li>
           <a href="./vibes_about.html" id="about" class="w3-bar-item w3-button">About Us </a></li>
           <a href="./vibes_contact.html" id="contact" class="w3-bar-item w3-button">Contact Us </a></li>
-          <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
-          <button id='btnSearch'>Search</button>
-        <button id='btnReset'>Reset</button>
-                </nav>
-                <div class="w3-flex" style="gap:8px">
+                 </nav>
+                <div class="w3-grid" style="gap:8px">
                     <div>
-<h1 style="color: white">Vacations Vibes Travel Recommendations</h1>
-                        <p style="color: white">Active, laidback, dreamy, or intense?</p>
-                        <p style="color: white">Use the Vacation Vibes explorer to find the perfect vacation to match your vibe. </p>  
-                        <button id='btnBook'>Book Now</button>
-                          </div>                
-                    <div><p>For the recommendations</p>
-                            <img src="img_snowtops.jpg" alt="Alps">
-                            <div class="w3-container w3-center">
-                              <p>The Italian / Austrian Alps</p>
+<h1 style="color: white">Contact Us</h1>
+                        <p style="color: white">Vibe with us</p>
+                     </div>                
+                    <div>
+                                         <p>Contact Form</p>
+                        <form id="contactForm">
+                            <div>
+                              <label for="name">Name</label>
+                              <input type="text" id="name" name="name" required>
                             </div>
+                            <div>
+                              <label for="email">Email</label>
+                              <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                              <label for="message">Message</label>
+                              <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" onclick="thankyou()">Submit</button>
+                          </form>
+                          <script>
+                            function thankyou(){
+                                alert('Thank you for contacting us!')
+                            }
+                          </script>
+                          </div>
                         </div>
                           </div>
-                          <div class="w3-card-4">
-                            <div class="w3-container w3-white">
-                            <img src="img_snowtops.jpg" alt="Alps">
-                            <div class="w3-container w3-center">
-                              <p>The Italian / Austrian Alps</p>
-                            </div>
-                        </div>
-                          </div>
-                    </div>
                   </div>
 <footer>                  
 <div class="w3-container w3-blue">
