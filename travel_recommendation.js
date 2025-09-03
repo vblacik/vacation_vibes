@@ -6,7 +6,7 @@ function searchKeyword() {
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
-        const condition = data.conditions.find(item => item.name.toLowerCase() === input);
+        const keyword = data.conditions.find(item => item.name.toLowerCase() === input);
 
         if (condition) {
           const symptoms = condition.symptoms.join(', ');
@@ -29,5 +29,6 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
 
 
