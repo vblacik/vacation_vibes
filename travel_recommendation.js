@@ -6,9 +6,8 @@ function searchKeyword() {
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
-        const keyword = data.conditions.find(item => item.name.toLowerCase() === input);
-
-        if (condition) {
+        const keyword = data.countries.find(item => item.name.toLowerCase() === input);
+        if (keyword) {
           const symptoms = condition.symptoms.join(', ');
           const prevention = condition.prevention.join(', ');
           const treatment = condition.treatment;
@@ -20,7 +19,7 @@ function searchKeyword() {
           resultDiv.innerHTML += `<p><strong>Prevention:</strong> ${prevention}</p>`;
           resultDiv.innerHTML += `<p><strong>Treatment:</strong> ${treatment}</p>`;
         } else {
-          resultDiv.innerHTML = 'Condition not found.';
+          resultDiv.innerHTML = 'Country not found.';
         }
       })
       .catch(error => {
@@ -29,6 +28,7 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
 
 
 
