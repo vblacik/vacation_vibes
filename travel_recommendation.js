@@ -6,10 +6,10 @@ function searchKeyword() {
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
-        const keyword = data.countries.find(item => item.name.toLowerCase() === input);
+        const keyword = data.temples.find(item => item.name.toLowerCase() === input);
         if (keyword) {
-          const symptoms = condition.symptoms.join(', ');
-          const prevention = condition.prevention.join(', ');
+          const name = keyword.name.join(', ');
+          const prevention = keyword.prevention.join(', ');
           const treatment = condition.treatment;
 
           resultDiv.innerHTML += `<h2>${condition.name}</h2>`;
@@ -28,6 +28,7 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
 
 
 
