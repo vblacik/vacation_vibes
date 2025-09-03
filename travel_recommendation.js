@@ -1,5 +1,5 @@
 function searchKeyword() {
-    const input = document.getElementById('conditionInput').value.toLowerCase();
+    const input = document.getElementById('keywordInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
 
@@ -29,3 +29,4 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
