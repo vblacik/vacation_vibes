@@ -9,15 +9,15 @@ function searchKeyword() {
         const keyword = data.temples.find(item => item.name.toLowerCase() === input);
         if (keyword) {
           const name = keyword.name.join(', ');
-          const prevention = keyword.prevention.join(', ');
-          const treatment = condition.treatment;
+          const imageUrl = keyword.imageUrl.join(', ');
+          const description = keyword.description;
 
-          resultDiv.innerHTML += `<h2>${condition.name}</h2>`;
-          resultDiv.innerHTML += `<img src="${condition.imagesrc}" alt="hjh">`;
+          resultDiv.innerHTML += `<h2>${keyword.name}</h2>`;
+          resultDiv.innerHTML += `<img src="${keyword.imageUrl}" alt="search result image">`;
 
-          resultDiv.innerHTML += `<p><strong>Symptoms:</strong> ${symptoms}</p>`;
-          resultDiv.innerHTML += `<p><strong>Prevention:</strong> ${prevention}</p>`;
-          resultDiv.innerHTML += `<p><strong>Treatment:</strong> ${treatment}</p>`;
+          resultDiv.innerHTML += `<p><strong>Temple Name:</strong> ${name}</p>`;
+          resultDiv.innerHTML += `<p><strong>Image:</strong> ${imageUrl}</p>`;
+          resultDiv.innerHTML += `<p><strong>Description</strong> ${description}</p>`;
         } else {
           resultDiv.innerHTML = 'Country not found.';
         }
@@ -28,6 +28,7 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
 
 
 
