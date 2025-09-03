@@ -3,7 +3,7 @@ function searchKeyword() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
 
-    fetch('health_analysis.json')
+    fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
         const condition = data.conditions.find(item => item.name.toLowerCase() === input);
@@ -29,4 +29,5 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
 
