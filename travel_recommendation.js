@@ -19,7 +19,7 @@ function searchKeyword() {
           resultDiv.innerHTML += `<p><strong>Image:</strong> ${imageUrl}</p>`;
           resultDiv.innerHTML += `<p><strong>Description</strong> ${description}</p>`;
         } else {
-          resultDiv.innerHTML = 'Country not found.';
+          resultDiv.innerHTML = 'Keyword not found.';
         }
       })
       .catch(error => {
