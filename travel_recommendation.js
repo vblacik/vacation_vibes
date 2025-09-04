@@ -16,10 +16,7 @@ function searchKeyword() {
 
           resultDiv.innerHTML += `<h2>${city.name}</h2>`;
           resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="search result image">`;
-
-          resultDiv.innerHTML += `<p><strong>City Name:</strong> ${cityName}</p>`;
-          resultDiv.innerHTML += `<p><strong>Image:</strong> ${cityImage}</p>`;
-          resultDiv.innerHTML += `<p><strong>Description:</strong> ${cityDescription}</p>`;
+          resultDiv.innerHTML += `<p>"${city.description}"</p>`;
         });
         } else {
           resultDiv.innerHTML = 'Keyword not found.';
