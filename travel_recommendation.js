@@ -6,7 +6,7 @@ function searchKeyword() {
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
-        const keyword = data.temples.find(item => item.name.toLowerCase() === input);
+        const keyword = data.countries.find(item => item.name.toLowerCase() === input);
         if (keyword) {
           const name = keyword.name.join(', ');
           const imageUrl = keyword.imageUrl.join(', ');
@@ -28,6 +28,7 @@ function searchKeyword() {
       });
   }
     btnSearch.addEventListener('click', searchKeyword);
+
 
 
 
