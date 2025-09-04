@@ -8,16 +8,19 @@ function searchKeyword() {
       .then(data => {
         const keyword = data.countries.find(item => item.name.toLowerCase() === input);
         if (keyword) {
-          const name = keyword.name.join(', ');
-          const imageUrl = keyword.imageUrl.join(', ');
-          const description = keyword.description;
+        const cities = keyword.cities
+        cities.forEach(city => {
+          const cityName = cities.name;
+          const cityImage = cities.imageUrl;
+          const cityDescription = cities.description;
 
-          resultDiv.innerHTML += `<h2>${keyword.name}</h2>`;
-          resultDiv.innerHTML += `<img src="${keyword.imageUrl}" alt="search result image">`;
+          resultDiv.innerHTML += `<h2>${city.name}</h2>`;
+          resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="search result image">`;
 
-          resultDiv.innerHTML += `<p><strong>Temple Name:</strong> ${name}</p>`;
-          resultDiv.innerHTML += `<p><strong>Image:</strong> ${imageUrl}</p>`;
-          resultDiv.innerHTML += `<p><strong>Description</strong> ${description}</p>`;
+          resultDiv.innerHTML += `<p><strong>City Name:</strong> ${cityName}</p>`;
+          resultDiv.innerHTML += `<p><strong>Image:</strong> ${cityImage}</p>`;
+          resultDiv.innerHTML += `<p><strong>Description:</strong> ${cityDescription}</p>`;
+        });
         } else {
           resultDiv.innerHTML = 'Keyword not found.';
         }
