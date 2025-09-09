@@ -1,8 +1,40 @@
 function searchKeyword() {
+    let beachesMatch = false;
+    let templesMatch = false;
     const input = document.getElementById('keywordInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
+    beachesMatch = input.includes("beach");
+    templesMatch = input.includes ("temple");
 
+    if (beachesMatch === true) {
+        fetch('travel_recommendation_api.json')
+          .then(response => response.json())
+          .then(data => {
+            const beaches = data.beaches; // assuming the JSON has a 'beaches' array
+            beaches.forEach(beach => {
+              resultDiv.innerHTML += `<h2>${beach.name}</h2>`;
+              resultDiv.innerHTML += `<img src="${beach.imageUrl}" alt="search result image">`;
+              resultDiv.innerHTML += `<p>${beach.description}</p>`;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }
+}
+else if(templesMatch){
+    fetch('travel_recommendation_api.json')
+      .then(response => response.json())
+      .then(data => {
+        const temples = data.temples; // assuming the JSON has a 'temples' array
+        temples.forEach(temple => {
+          resultDiv.innerHTML += `<h2>${temple.name}</h2>`;
+          resultDiv.innerHTML += `<img src="${temple.imageUrl}" alt="search result image">`;
+          resultDiv.innerHTML += `<p>${temple.description}</p>`;
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+}
+else{
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
