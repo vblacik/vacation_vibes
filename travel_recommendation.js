@@ -1,11 +1,9 @@
 function searchKeyword() {
-    let beachesMatch = false;
-    let templesMatch = false;
     const input = document.getElementById('keywordInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
-    beachesMatch = input.includes("beach");
-    templesMatch = input.includes ("temple");
+    let beachesMatch = input.includes("beach");
+    let templesMatch = input.includes("temple");
 
     if (beachesMatch) {
         fetch('travel_recommendation_api.json')
@@ -41,10 +39,6 @@ else{
         if (keyword) {
         const cities = keyword.cities
         cities.forEach(city => {
-          const cityName = cities.name;
-          const cityImage = cities.imageUrl;
-          const cityDescription = cities.description;
-
           resultDiv.innerHTML += `<h2>${city.name}</h2>`;
           resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="search result image">`;
           resultDiv.innerHTML += `<p>"${city.description}"</p>`;
@@ -57,12 +51,5 @@ else{
         console.error('Error:', error);
         resultDiv.innerHTML = 'An error occurred while fetching data.';
       });
-  }
-    btnSearch.addEventListener('click', searchKeyword);
-
-
-
-
-
-
+  };
 }
