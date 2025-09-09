@@ -7,7 +7,7 @@ function searchKeyword() {
     beachesMatch = input.includes("beach");
     templesMatch = input.includes ("temple");
 
-    if (beachesMatch === true) {
+    if (beachesMatch) {
         fetch('travel_recommendation_api.json')
           .then(response => response.json())
           .then(data => {
@@ -20,7 +20,6 @@ function searchKeyword() {
         })
         .catch(error => console.error('Error fetching data:', error));
     }
-}
 else if(templesMatch){
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
@@ -66,4 +65,4 @@ else{
 
 
 
-
+}
