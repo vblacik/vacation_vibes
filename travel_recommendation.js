@@ -16,9 +16,9 @@ function searchKeyword() {
           .then(data => {
             const beaches = data.beaches; // assuming the JSON has a 'beaches' array
             beaches.forEach(beach => {
-              resultDiv.innerHTML += `<h2>${beach.name}</h2>`;
+              resultDiv.innerHTML += `<h2 style="color: white">${beach.name}</h2>`;
               resultDiv.innerHTML += `<img src="${beach.imageUrl}" alt="search result image" width="500">`;
-              resultDiv.innerHTML += `<p>${beach.description}</p>`;
+              resultDiv.innerHTML += `<p style="color: white">${beach.description}</p>`;
             });
         })
         .catch(error => console.error('Error fetching data:', error));
@@ -29,9 +29,9 @@ else if(templesMatch){
       .then(data => {
         const temples = data.temples; // assuming the JSON has a 'temples' array
         temples.forEach(temple => {
-          resultDiv.innerHTML += `<h2>${temple.name}</h2>`;
+          resultDiv.innerHTML += `<h2 style="color: white">${temple.name}</h2>`;
           resultDiv.innerHTML += `<img src="${temple.imageUrl}" alt="search result image" width="500">`;
-          resultDiv.innerHTML += `<p>${temple.description}</p>`;
+          resultDiv.innerHTML += `<p style="color: white">${temple.description}</p>`;
         });
     })
     .catch(error => console.error('Error fetching data:', error));
@@ -44,9 +44,9 @@ else{
         if (keyword) {
         const cities = keyword.cities
         cities.forEach(city => {
-          resultDiv.innerHTML += `<h2>${city.name}</h2>`;
+          resultDiv.innerHTML += `<h2 style="color: white">${city.name}</h2>`;
           resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="search result image" width="500">`;
-          resultDiv.innerHTML += `<p>"${city.description}"</p>`;
+          resultDiv.innerHTML += `<p style="color: white">"${city.description}"</p>`;
         });
         } else {
           resultDiv.innerHTML = 'Keyword not found.';
@@ -58,3 +58,4 @@ else{
       });
   };
 }
+
