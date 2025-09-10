@@ -17,7 +17,7 @@ function searchKeyword() {
             const beaches = data.beaches; // assuming the JSON has a 'beaches' array
             beaches.forEach(beach => {
               resultDiv.innerHTML += `<h2>${beach.name}</h2>`;
-              resultDiv.innerHTML += `<img src="${beach.imageUrl}" alt="search result image">`;
+              resultDiv.innerHTML += `<img src="${beach.imageUrl}" alt="search result image" width="500">`;
               resultDiv.innerHTML += `<p>${beach.description}</p>`;
             });
         })
@@ -30,7 +30,7 @@ else if(templesMatch){
         const temples = data.temples; // assuming the JSON has a 'temples' array
         temples.forEach(temple => {
           resultDiv.innerHTML += `<h2>${temple.name}</h2>`;
-          resultDiv.innerHTML += `<img src="${temple.imageUrl}" alt="search result image">`;
+          resultDiv.innerHTML += `<img src="${temple.imageUrl}" alt="search result image" width="500">`;
           resultDiv.innerHTML += `<p>${temple.description}</p>`;
         });
     })
@@ -45,7 +45,7 @@ else{
         const cities = keyword.cities
         cities.forEach(city => {
           resultDiv.innerHTML += `<h2>${city.name}</h2>`;
-          resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="search result image">`;
+          resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="search result image" width="500">`;
           resultDiv.innerHTML += `<p>"${city.description}"</p>`;
         });
         } else {
