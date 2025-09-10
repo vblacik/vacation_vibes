@@ -42,12 +42,14 @@
         "cities": [
           {
             "name": "Rio de Janeiro, Brazil",
-            "imageUrl": "enter_your_image_for_rio.jpg",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Rio_de_Janeiro%2C_Brazil_-21.jpg",
+            "imageCredit": "Wilfredo Rafael Rodriguez Hernandez, CC0, via Wikimedia Commons",
             "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
           },
           {
             "name": "São Paulo, Brazil",
-            "imageUrl": "enter_your_image_for_sao-paulo.jpg",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Webysther_20190306143154_-_Catedral_Metropolitana_de_S%C3%A3o_Paulo.jpg",
+            "imageCredit": "Webysther Nunes, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
             "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
           }
         ]
@@ -57,13 +59,15 @@
       {
         "id": 1,
         "name": "Angkor Wat, Cambodia",
-        "imageUrl": "enter_your_image_for_angkor-wat.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/20171126_Angkor_Wat_4712_DxO.jpg",
+        "imageCredit": "Jakub Hałun, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
         "description": "A UNESCO World Heritage site and the largest religious monument in the world."
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "enter_your_image_for_taj-mahal.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Taj_Mahal%2C_Agra%2C_India.jpgenter_your_image_for_taj-mahal.jpg",
+        "imageCredit": "This file is not in the public domain. Therefore you are requested to use the following next to the image if you reuse this file: © Yann Forget / Wikimedia Commons",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
     ],
@@ -71,13 +75,15 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
-        "imageUrl": "enter_your_image_for_bora-bora.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Matira_Beach%2C_Bora_Bora%2C_French_Polynesia.jpgenter_your_image_for_bora-bora.jpg",
+        "imagedCredit": "The original uploader was Sba2 at English Wikipedia., CC BY 2.5 <https://creativecommons.org/licenses/by/2.5>, via Wikimedia Commons",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
         "id": 2,
         "name": "Copacabana Beach, Brazil",
-        "imageUrl": "enter_your_image_for_copacabana.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Praia_de_Copacabana_-_Rio_de_Janeiro%2C_Brasil.jpg",
+        "imageCredit": "[www.flickr.com/photos/26912057@N02/ bisonlux], CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
       }
     ]
