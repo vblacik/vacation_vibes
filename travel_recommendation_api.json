@@ -60,13 +60,13 @@
         "id": 1,
         "name": "Angkor Wat, Cambodia",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/20171126_Angkor_Wat_4712_DxO.jpg",
-        "imageCredit": "Jakub Hałun, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+        "imageCredit": "Jakub Hałun, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
         "description": "A UNESCO World Heritage site and the largest religious monument in the world."
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Taj_Mahal%2C_Agra%2C_India.jpgenter_your_image_for_taj-mahal.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Taj_Mahal%2C_Agra%2C_India.jpg",
         "imageCredit": "This file is not in the public domain. Therefore you are requested to use the following next to the image if you reuse this file: © Yann Forget / Wikimedia Commons",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
@@ -75,7 +75,7 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Matira_Beach%2C_Bora_Bora%2C_French_Polynesia.jpgenter_your_image_for_bora-bora.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Matira_Beach%2C_Bora_Bora%2C_French_Polynesia.jpg",
         "imagedCredit": "The original uploader was Sba2 at English Wikipedia., CC BY 2.5 <https://creativecommons.org/licenses/by/2.5>, via Wikimedia Commons",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
